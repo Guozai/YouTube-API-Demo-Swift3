@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0G4-Vq-KPD">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,38 +18,55 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-fX-a8J">
-                                <rect key="frame" x="107" y="390" width="200" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-fX-a8J">
+                                <rect key="frame" x="268" y="68" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.50548102094240832" green="0.50548102094240832" blue="0.50548102094240832" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="创建房间">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9kB-eN-fQ2"/>
+                                    <constraint firstAttribute="width" constant="200" id="gEL-TR-hsY"/>
+                                </constraints>
+                                <state key="normal" title="Create Room">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="3lb-im-JxK" kind="show" id="utf-4N-mVy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39p-7M-Is3">
-                                <rect key="frame" x="107" y="461" width="200" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39p-7M-Is3">
+                                <rect key="frame" x="268" y="139" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.50517424738219896" green="0.50517424738219896" blue="0.50517424738219896" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="加入房间">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KRo-Cb-WUN"/>
+                                    <constraint firstAttribute="width" constant="200" id="YDX-PE-8jA"/>
+                                </constraints>
+                                <state key="normal" title="Join In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-jc-16z">
-                                <rect key="frame" x="107" y="533" width="200" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-jc-16z">
+                                <rect key="frame" x="268" y="211" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.50429482984293195" green="0.50429482984293195" blue="0.50429482984293195" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="更多">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MLf-oF-lb2"/>
+                                    <constraint firstAttribute="width" constant="200" id="sJL-6h-e2O"/>
+                                </constraints>
+                                <state key="normal" title="More">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="39p-7M-Is3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7uQ-Zc-B7J"/>
+                            <constraint firstItem="39p-7M-Is3" firstAttribute="top" secondItem="bXa-fX-a8J" secondAttribute="bottom" constant="31" id="Cgt-AM-JIo"/>
+                            <constraint firstItem="TSx-jc-16z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acq-6G-BuV"/>
+                            <constraint firstItem="TSx-jc-16z" firstAttribute="top" secondItem="39p-7M-Is3" secondAttribute="bottom" constant="32" id="nV8-i7-rM4"/>
+                            <constraint firstItem="bXa-fX-a8J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qCi-ow-E2P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TSx-jc-16z" secondAttribute="bottom" constant="119" id="v7d-0q-n3A"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="3wt-Zn-bAW"/>
@@ -71,7 +88,7 @@
                         <viewControllerLayoutGuide type="bottom" id="f2E-fz-qyu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RmS-Nf-owl" customClass="TestView" customModule="Assignment01" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
