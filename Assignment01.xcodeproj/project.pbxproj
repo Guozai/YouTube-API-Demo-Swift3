@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		722582C81E2765110019AF35 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722582C71E2765110019AF35 /* CreateGameViewController.swift */; };
+		722582C81E2765110019AF35 /* CreateGameViewController in Sources */ = {isa = PBXBuildFile; fileRef = 722582C71E2765110019AF35 /* CreateGameViewController */; };
 		7251ADE51E235082000A0CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADE41E235082000A0CA8 /* AppDelegate.swift */; };
 		7251ADE71E235082000A0CA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADE61E235082000A0CA8 /* LoginViewController.swift */; };
-		7251ADEA1E235082000A0CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADE81E235082000A0CA8 /* Main.storyboard */; };
+		7251ADEA1E235082000A0CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADE81E235082000A0CA8 /* Main.storyboard */; settings = {ASSET_TAGS = (Rule, ); }; };
 		7251ADEC1E235082000A0CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADEB1E235082000A0CA8 /* Assets.xcassets */; };
 		7251ADEF1E235082000A0CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADED1E235082000A0CA8 /* LaunchScreen.storyboard */; };
 		7251ADFA1E235082000A0CA8 /* Assignment01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADF91E235082000A0CA8 /* Assignment01Tests.swift */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		722582C71E2765110019AF35 /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		722582C71E2765110019AF35 /* CreateGameViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreateGameViewController; sourceTree = "<group>"; };
 		7251ADE11E235082000A0CA8 /* Assignment01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7251ADE41E235082000A0CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7251ADE61E235082000A0CA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		722582C61E2763010019AF35 /* Views */ = {
+		722501AF1E2CA52500802CF0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				7251ADE61E235082000A0CA8 /* LoginViewController.swift */,
-				722582C71E2765110019AF35 /* CreateGameViewController.swift */,
+				722582C71E2765110019AF35 /* CreateGameViewController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		722582C61E2763010019AF35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7251ADE81E235082000A0CA8 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -108,9 +116,9 @@
 		7251ADE31E235082000A0CA8 /* Assignment01 */ = {
 			isa = PBXGroup;
 			children = (
+				722501AF1E2CA52500802CF0 /* Controller */,
 				722582C61E2763010019AF35 /* Views */,
 				7251ADE41E235082000A0CA8 /* AppDelegate.swift */,
-				7251ADE81E235082000A0CA8 /* Main.storyboard */,
 				7251ADEB1E235082000A0CA8 /* Assets.xcassets */,
 				7251ADED1E235082000A0CA8 /* LaunchScreen.storyboard */,
 				7251ADF01E235082000A0CA8 /* Info.plist */,
@@ -198,6 +206,9 @@
 		7251ADD91E235081000A0CA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Rule,
+				);
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = au.rmit.s3177105;
@@ -270,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722582C81E2765110019AF35 /* CreateGameViewController.swift in Sources */,
+				722582C81E2765110019AF35 /* CreateGameViewController in Sources */,
 				7251ADE71E235082000A0CA8 /* LoginViewController.swift in Sources */,
 				7251ADE51E235082000A0CA8 /* AppDelegate.swift in Sources */,
 			);
