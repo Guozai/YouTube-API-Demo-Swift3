@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		722582C81E2765110019AF35 /* CreateGameViewController in Sources */ = {isa = PBXBuildFile; fileRef = 722582C71E2765110019AF35 /* CreateGameViewController */; };
 		7251ADE51E235082000A0CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADE41E235082000A0CA8 /* AppDelegate.swift */; };
-		7251ADE71E235082000A0CA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADE61E235082000A0CA8 /* LoginViewController.swift */; };
 		7251ADEA1E235082000A0CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADE81E235082000A0CA8 /* Main.storyboard */; settings = {ASSET_TAGS = (Rule, ); }; };
 		7251ADEC1E235082000A0CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADEB1E235082000A0CA8 /* Assets.xcassets */; };
 		7251ADEF1E235082000A0CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7251ADED1E235082000A0CA8 /* LaunchScreen.storyboard */; };
 		7251ADFA1E235082000A0CA8 /* Assignment01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251ADF91E235082000A0CA8 /* Assignment01Tests.swift */; };
 		7251AE051E235082000A0CA8 /* Assignment01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251AE041E235082000A0CA8 /* Assignment01UITests.swift */; };
+		726D4DFC1E3F2BEF00064732 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726D4DFB1E3F2BEF00064732 /* SearchResultTableViewCell.swift */; };
+		726D4DFE1E3F3AC100064732 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726D4DFD1E3F3AC100064732 /* VideoViewController.swift */; };
+		72996BF41E3B85DC004E26FD /* SearchVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72996BF31E3B85DC004E26FD /* SearchVideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		722582C71E2765110019AF35 /* CreateGameViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreateGameViewController; sourceTree = "<group>"; };
 		7251ADE11E235082000A0CA8 /* Assignment01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7251ADE41E235082000A0CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7251ADE61E235082000A0CA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7251ADE91E235082000A0CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7251ADEB1E235082000A0CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7251ADEE1E235082000A0CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		7251AE001E235082000A0CA8 /* Assignment01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7251AE041E235082000A0CA8 /* Assignment01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment01UITests.swift; sourceTree = "<group>"; };
 		7251AE061E235082000A0CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726D4DFB1E3F2BEF00064732 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		726D4DFD1E3F3AC100064732 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		72996BF31E3B85DC004E26FD /* SearchVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,8 @@
 		722501AF1E2CA52500802CF0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7251ADE61E235082000A0CA8 /* LoginViewController.swift */,
-				722582C71E2765110019AF35 /* CreateGameViewController */,
+				72996BF31E3B85DC004E26FD /* SearchVideoViewController.swift */,
+				726D4DFD1E3F3AC100064732 /* VideoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				7251ADE81E235082000A0CA8 /* Main.storyboard */,
+				726D4DFB1E3F2BEF00064732 /* SearchResultTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -116,8 +119,8 @@
 		7251ADE31E235082000A0CA8 /* Assignment01 */ = {
 			isa = PBXGroup;
 			children = (
-				722501AF1E2CA52500802CF0 /* Controller */,
 				722582C61E2763010019AF35 /* Views */,
+				722501AF1E2CA52500802CF0 /* Controller */,
 				7251ADE41E235082000A0CA8 /* AppDelegate.swift */,
 				7251ADEB1E235082000A0CA8 /* Assets.xcassets */,
 				7251ADED1E235082000A0CA8 /* LaunchScreen.storyboard */,
@@ -210,7 +213,7 @@
 					Rule,
 				);
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = au.rmit.s3177105;
 				TargetAttributes = {
 					7251ADE01E235081000A0CA8 = {
@@ -281,9 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722582C81E2765110019AF35 /* CreateGameViewController in Sources */,
-				7251ADE71E235082000A0CA8 /* LoginViewController.swift in Sources */,
+				72996BF41E3B85DC004E26FD /* SearchVideoViewController.swift in Sources */,
+				726D4DFE1E3F3AC100064732 /* VideoViewController.swift in Sources */,
 				7251ADE51E235082000A0CA8 /* AppDelegate.swift in Sources */,
+				726D4DFC1E3F2BEF00064732 /* SearchResultTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -406,6 +411,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
